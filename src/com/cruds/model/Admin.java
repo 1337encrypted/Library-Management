@@ -13,6 +13,11 @@ public class Admin {
     String id;
     String password;
     
+//    public Admin()
+//    {
+//        this.id = "Yash";
+//        this.password = "root";
+//    }
     public Admin(String id, String password)
     {
         this.id = id;
@@ -20,11 +25,11 @@ public class Admin {
     }
     
     public String getId() {
-	return id;
+	return this.id;
     }
     
     public String getPassword() {
-	return password;
+	return this.password;
     }
     
 }

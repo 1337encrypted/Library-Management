@@ -25,7 +25,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Welcome to GIT Library");
+        setTitle("Welcome to Library");
 
         LabelAdmin.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         LabelAdmin.setText("Admin ID:");
