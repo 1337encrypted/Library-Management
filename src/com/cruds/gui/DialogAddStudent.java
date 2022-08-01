@@ -41,14 +41,15 @@ public class DialogAddStudent extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Add Student");
 
-        labelUsn.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        labelUsn.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         labelUsn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelUsn.setText("USN");
 
-        labelName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        labelName.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         labelName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelName.setText("Name");
 
+        txtUSN.setBackground(new java.awt.Color(255, 255, 204));
         txtUSN.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtUSN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,7 +57,9 @@ public class DialogAddStudent extends javax.swing.JDialog {
             }
         });
 
-        btnAddStudent.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtNAME.setBackground(new java.awt.Color(255, 255, 204));
+
+        btnAddStudent.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnAddStudent.setText("Add");
         btnAddStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +80,7 @@ public class DialogAddStudent extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtUSN, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNAME, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnAddStudent)
@@ -96,7 +99,7 @@ public class DialogAddStudent extends javax.swing.JDialog {
                     .addComponent(txtNAME, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addComponent(btnAddStudent)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         pack();

@@ -46,13 +46,6 @@ public class MainFrame extends javax.swing.JFrame {
         btnListBooks = new javax.swing.JButton();
         btnAddBook = new javax.swing.JButton();
         mainPanel = new javax.swing.JPanel();
-        panelSearchBook = new javax.swing.JPanel();
-        comboBoxSearchBy = new javax.swing.JComboBox<>();
-        txtSearch = new javax.swing.JTextField();
-        searchScrollPane = new javax.swing.JScrollPane();
-        searchTable = new javax.swing.JTable();
-        btnSearch = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         panelListBooks = new javax.swing.JPanel();
         scrollPaneBookAuthor = new javax.swing.JScrollPane();
         bookAuthorTable = new javax.swing.JTable();
@@ -101,24 +94,33 @@ public class MainFrame extends javax.swing.JFrame {
         authorEmailLabel = new javax.swing.JLabel();
         txtAuthorEmail = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        panelSearchBook = new javax.swing.JPanel();
+        comboBoxSearchBy = new javax.swing.JComboBox<>();
+        txtSearch = new javax.swing.JTextField();
+        searchScrollPane = new javax.swing.JScrollPane();
+        searchTable = new javax.swing.JTable();
+        btnSearch = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library");
 
-        btnReturnToday.setBackground(new java.awt.Color(153, 102, 255));
-        btnReturnToday.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnReturnToday.setBackground(new java.awt.Color(0, 204, 204));
+        btnReturnToday.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnReturnToday.setForeground(new java.awt.Color(51, 51, 51));
-        btnReturnToday.setText("Book to be returned Today");
+        btnReturnToday.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Return_Purchase_26px.png"))); // NOI18N
+        btnReturnToday.setText("Return book");
         btnReturnToday.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReturnTodayActionPerformed(evt);
             }
         });
 
-        btnListIssuedBooks.setBackground(new java.awt.Color(153, 102, 255));
-        btnListIssuedBooks.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnListIssuedBooks.setBackground(new java.awt.Color(0, 204, 204));
+        btnListIssuedBooks.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnListIssuedBooks.setForeground(new java.awt.Color(51, 51, 51));
+        btnListIssuedBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_View_Details_26px.png"))); // NOI18N
         btnListIssuedBooks.setText("List Issued Books");
         btnListIssuedBooks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,9 +128,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        btnIssueBook.setBackground(new java.awt.Color(153, 102, 255));
-        btnIssueBook.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnIssueBook.setBackground(new java.awt.Color(0, 204, 204));
+        btnIssueBook.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnIssueBook.setForeground(new java.awt.Color(51, 51, 51));
+        btnIssueBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Book_Shelf_50px.png"))); // NOI18N
         btnIssueBook.setText("Issue Book");
         btnIssueBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,9 +139,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        btnSearchBook.setBackground(new java.awt.Color(153, 102, 255));
-        btnSearchBook.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnSearchBook.setBackground(new java.awt.Color(0, 204, 204));
+        btnSearchBook.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnSearchBook.setForeground(new java.awt.Color(51, 51, 51));
+        btnSearchBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Books_26px.png"))); // NOI18N
         btnSearchBook.setText("Search Book");
         btnSearchBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,9 +150,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        btnListBooks.setBackground(new java.awt.Color(153, 102, 255));
-        btnListBooks.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnListBooks.setBackground(new java.awt.Color(0, 204, 204));
+        btnListBooks.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnListBooks.setForeground(new java.awt.Color(51, 51, 51));
+        btnListBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_View_Details_26px.png"))); // NOI18N
         btnListBooks.setText("List all Books");
         btnListBooks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,10 +161,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        btnAddBook.setBackground(new java.awt.Color(153, 102, 255));
-        btnAddBook.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnAddBook.setBackground(new java.awt.Color(0, 204, 204));
+        btnAddBook.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         btnAddBook.setForeground(new java.awt.Color(51, 51, 51));
-        btnAddBook.setText("Add Book");
+        btnAddBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Book_26px.png"))); // NOI18N
+        btnAddBook.setText(" Add Book");
         btnAddBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddBookActionPerformed(evt);
@@ -167,94 +173,6 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         mainPanel.setLayout(new java.awt.CardLayout());
-
-        panelSearchBook.setPreferredSize(new java.awt.Dimension(500, 399));
-
-        comboBoxSearchBy.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        comboBoxSearchBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Title", "Category", "Author", "ISBN" }));
-        comboBoxSearchBy.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxSearchByActionPerformed(evt);
-            }
-        });
-
-        txtSearch.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        searchTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        searchTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Book ISBN", "Book Title", "Category", "Quantity", "Author"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        searchTable.setRowHeight(20);
-        searchScrollPane.setViewportView(searchTable);
-        if (searchTable.getColumnModel().getColumnCount() > 0) {
-            searchTable.getColumnModel().getColumn(0).setPreferredWidth(20);
-            searchTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-            searchTable.getColumnModel().getColumn(3).setPreferredWidth(20);
-        }
-
-        btnSearch.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnSearch.setText("Search");
-        btnSearch.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSearchActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 0, 204));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Search Book");
-
-        javax.swing.GroupLayout panelSearchBookLayout = new javax.swing.GroupLayout(panelSearchBook);
-        panelSearchBook.setLayout(panelSearchBookLayout);
-        panelSearchBookLayout.setHorizontalGroup(
-            panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSearchBookLayout.createSequentialGroup()
-                .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelSearchBookLayout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnSearch)
-                            .addGroup(panelSearchBookLayout.createSequentialGroup()
-                                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(comboBoxSearchBy, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(searchScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(panelSearchBookLayout.createSequentialGroup()
-                        .addGap(381, 381, 381)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(93, Short.MAX_VALUE))
-        );
-        panelSearchBookLayout.setVerticalGroup(
-            panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchBookLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboBoxSearchBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSearch)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(searchScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(140, 140, 140))
-        );
-
-        mainPanel.add(panelSearchBook, "panelSearchBook");
 
         scrollPaneBookAuthor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -362,7 +280,6 @@ public class MainFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        bookTable.setRowHeight(20);
         bookScrollPane.setViewportView(bookTable);
         if (bookTable.getColumnModel().getColumnCount() > 0) {
             bookTable.getColumnModel().getColumn(1).setPreferredWidth(100);
@@ -404,7 +321,6 @@ public class MainFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        studentTable.setRowHeight(20);
         studentScrollPane.setViewportView(studentTable);
 
         btnIssue.setBackground(new java.awt.Color(153, 153, 255));
@@ -531,7 +447,6 @@ public class MainFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        issuedBooksTable.setRowHeight(20);
         scrollPaneIssuedBooks.setViewportView(issuedBooksTable);
         if (issuedBooksTable.getColumnModel().getColumnCount() > 0) {
             issuedBooksTable.getColumnModel().getColumn(0).setMinWidth(20);
@@ -628,7 +543,6 @@ public class MainFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        returnTodayTable.setRowHeight(20);
         scrollPaneReturnToday.setViewportView(returnTodayTable);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -787,8 +701,97 @@ public class MainFrame extends javax.swing.JFrame {
         panelAddBook.getAccessibleContext().setAccessibleName("");
         panelAddBook.getAccessibleContext().setAccessibleDescription("");
 
+        panelSearchBook.setPreferredSize(new java.awt.Dimension(500, 399));
+
+        comboBoxSearchBy.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
+        comboBoxSearchBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Title", "Category", "Author", "ISBN" }));
+        comboBoxSearchBy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxSearchByActionPerformed(evt);
+            }
+        });
+
+        txtSearch.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        searchTable.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
+        searchTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Book ISBN", "Book Title", "Category", "Quantity", "Author"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        searchScrollPane.setViewportView(searchTable);
+        if (searchTable.getColumnModel().getColumnCount() > 0) {
+            searchTable.getColumnModel().getColumn(0).setPreferredWidth(20);
+            searchTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+            searchTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+        }
+
+        btnSearch.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
+        btnSearch.setText("Search");
+        btnSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSearchActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Source Code Pro for Powerline", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Library_26px_1.png"))); // NOI18N
+        jLabel4.setText("Search Book");
+
+        javax.swing.GroupLayout panelSearchBookLayout = new javax.swing.GroupLayout(panelSearchBook);
+        panelSearchBook.setLayout(panelSearchBookLayout);
+        panelSearchBookLayout.setHorizontalGroup(
+            panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSearchBookLayout.createSequentialGroup()
+                .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelSearchBookLayout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSearch)
+                            .addGroup(panelSearchBookLayout.createSequentialGroup()
+                                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(comboBoxSearchBy, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(searchScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(panelSearchBookLayout.createSequentialGroup()
+                        .addGap(362, 362, 362)
+                        .addComponent(jLabel4)))
+                .addContainerGap(93, Short.MAX_VALUE))
+        );
+        panelSearchBookLayout.setVerticalGroup(
+            panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchBookLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(panelSearchBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboBoxSearchBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSearch)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(searchScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140))
+        );
+
+        mainPanel.add(panelSearchBook, "panelSearchBook");
+
         btnLogout.setBackground(new java.awt.Color(204, 204, 204));
-        btnLogout.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnLogout.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
+        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/icons8_Exit_26px_1.png"))); // NOI18N
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -807,11 +810,11 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(btnSearchBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnListBooks, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnIssueBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnListIssuedBooks, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                    .addComponent(btnReturnToday, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE))
+                    .addComponent(btnListIssuedBooks, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnReturnToday, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(10, 10, 10)
                 .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogout)

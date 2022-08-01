@@ -1,5 +1,4 @@
 package com.cruds.gui;
-
 import com.cruds.db.AdminDAO;
 import com.cruds.model.Admin;
 import javax.swing.JOptionPane;
@@ -17,36 +16,33 @@ public class LoginFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         panelLogin = new javax.swing.JPanel();
         LabelAdmin = new javax.swing.JLabel();
         LabelPass = new javax.swing.JLabel();
         txtAdminId = new javax.swing.JTextField();
         btnLogin = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Welcome to SIT Library");
+        setTitle("Welcome to GIT Library");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 0, 153));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Welcome to SIT Library");
-
-        LabelAdmin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        LabelAdmin.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         LabelAdmin.setText("Admin ID:");
 
-        LabelPass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        LabelPass.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         LabelPass.setText("Password:");
 
-        txtAdminId.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtAdminId.setBackground(new java.awt.Color(255, 255, 204));
+        txtAdminId.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
         txtAdminId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAdminIdActionPerformed(evt);
             }
         });
 
-        btnLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnLogin.setFont(new java.awt.Font("Source Code Pro for Powerline", 0, 14)); // NOI18N
+        btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cruds/gui/Login.png"))); // NOI18N
         btnLogin.setText("Login");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,7 +50,12 @@ public class LoginFrame extends javax.swing.JFrame {
             }
         });
 
+        txtPassword.setBackground(new java.awt.Color(255, 255, 204));
         txtPassword.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("ThreePointSix Roentgen", 0, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Login");
 
         javax.swing.GroupLayout panelLoginLayout = new javax.swing.GroupLayout(panelLogin);
         panelLogin.setLayout(panelLoginLayout);
@@ -64,21 +65,26 @@ public class LoginFrame extends javax.swing.JFrame {
                 .addGap(73, 73, 73)
                 .addGroup(panelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(LabelAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(LabelPass, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
+                    .addComponent(LabelPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(21, 21, 21)
                 .addGroup(panelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtAdminId, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
                     .addComponent(txtPassword))
                 .addGap(167, 167, 167))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLoginLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addGroup(panelLoginLayout.createSequentialGroup()
-                .addGap(208, 208, 208)
-                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(192, 192, 192)
+                .addComponent(btnLogin)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelLoginLayout.setVerticalGroup(
             panelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelLoginLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
                 .addGroup(panelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(LabelAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtAdminId, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
@@ -86,9 +92,9 @@ public class LoginFrame extends javax.swing.JFrame {
                 .addGroup(panelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(LabelPass, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addGap(32, 32, 32)
                 .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -96,22 +102,16 @@ public class LoginFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(100, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(116, 116, 116)
                 .addComponent(panelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(79, 79, 79)
                 .addComponent(panelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         panelLogin.getAccessibleContext().setAccessibleName("");
